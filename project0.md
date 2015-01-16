@@ -1027,10 +1027,14 @@
 
 **Reference**
 * http://www.memsql.com/features/
+
+
+
+
 * Oracle database 12c
 
 **Strength**
-* applications;
+* Supreme performance: a relational in-memory column database system for high-throughput, operational applications;
 * ACID transactions;
 * SQL as native language;
 * Support for both OLTP and data warehousing;
@@ -1335,6 +1339,8 @@
 * Write latency.
 **Reference**
 * ScaleArc, How It Works, http://scalearc.com/how-it-works
+
+
 * ScaleBase
 **Strength**
 * A distributed MySQL database architecture designed for web-scale applications;
@@ -1346,6 +1352,10 @@
 * Write latency.
 **Reference**
 * ScaleBase Technical Whitepaper
+
+
+
+
 * HBase
 
 **Strength**
@@ -1606,3 +1616,80 @@
 * http://blog.clustrix.com/2014/02/03/newsql-vs-sql-hadoop/
 
 
+#### Oracle Exadata 
+**Strength**
+* A datawarehousing bundle, the highest performing platform for Oracle Database, with scale-out architecture, high speed internal fabric, in-memory fault tolerance and other enterprise level optimization.
+**Weakness**
+* Heavy, exclusive ecosystem;
+* Expensive!
+**Reference**
+* Oracle Exadata Machine, Features and Benefits, https://www.oracle.com/engineered-systems/exadata/features.html
+
+#### IBM PureData 
+**Strength**
+* A datawarehousing platform wherein the hardware, storage and software capabilities are designed and optimized for specific high performance data workloads;
+* Applicable for both OLTP and OLAP.
+**Weakness**
+* Heavy, exclusive ecosystem;
+* Expensive!
+**Reference**
+* IBM PureData documentation, http://www-01.ibm.com/software/data/puredata/
+
+#### SAP HANA
+**Strength**
+* An in-memory, column-oriented, relational database management system;
+* Fast querying, real-time, operational analytic capability: cache/disk latency is eliminated;
+* OLAP and OLTP activities can take place in parallel in real time;
+* High scalability.
+**Weakness**
+* Concurrency support;
+* Performance will deteriorate as query complexity increases.
+**Reference**
+* Research Report, IBM DB2 BLU Acceleration vs. SAP HANA vs. Oracle Exadata
+* SAP HANA, Why HANA, http://hana.sap.com/abouthana/why-hana.html
+
+
+#### Microsoft SQL Server PDW
+**Strength**
+* PDW ships as an appliance with hardware and software pre-installed and pre-configured for maximum performance;
+* Data load in real-time and fast complex queries with Massively Parallel Processing (MPP) design;
+* Applicable for both OLAP and OLTP;
+* High scalability: auto-rebalancing.
+**Weakness**
+* Not all features of SQL Server are supported;
+* Not optimal for OLTP.
+**Reference**
+* <A Breakthrough Platform for Next-Generation Data Warehousing and Big Data Solutions>, Barbara Kess and Dan Kogan
+* Microsoft SQL Server Parallel Data Warehouse (PDW) Explained, http://www.jamesserra.com/archive/2011/08/microsoft-sql-server-parallel-data-warehouse-pdw-explained/
+
+
+
+#### Oracle Exalytics
+**Strength**
+* A in-memory analytic relational data platform for Oracle Database, with scale-out architecture, high speed internal fabric, and other enterprise level optimization;
+* Geared towards operational computation.
+**Weakness**
+* Database size limitation;
+* Expensive!
+**Reference**
+Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-systems/exalytics/features.html
+
+
+
+#### Teradata
+**Strength**
+* A datawarehousing platform wherein the hardware, storage and software capabilities are designed and optimized for specific high performance data workloads;
+* Shared nothing architecture, ability to scale out and to process extremely large data;
+* Secondary indexing, partitioning, columnar design and in-memory enhancement to boost complex querying performance.
+**Weakness**
+* Pool usability; 
+* Expensive!
+**Reference**
+* White Paper, <Hadoop and the Data Warehouse: When to Use Which>
+
+#### Teradata Astor 
+**Strength**
+* Provides out-of-the box integrated data acquisition, data preparation, analysis and visualization in a single SQL statement;
+* Hybrid  across the Aster and Apache Hadoop platforms, enablement of Map/Reduce.
+**Reference**
+* Product Features, http://www.teradata.com/Aster-Big-Analytics-Appliance/?LangType=1033&LangSelect=true#tabbable=0&tab1=0&tab2=0
