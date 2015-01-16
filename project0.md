@@ -1,9 +1,9 @@
-*Infinispan
+* Infinispan
 
 **Strength**
-*In-memory access: fast;
-*Schema-less key/value overcoming the constraints of traditional database;
-*Can be used as local cache and as clustered caches as well, which can linearly scale out; 
+* In-memory access: fast;
+* Schema-less key/value overcoming the constraints of traditional database;
+* Can be used as local cache and as clustered caches as well, which can linearly scale out; 
 *Scalable data partitioning across cluster, providing fault tolerance;
 *Elastic with consistent hashing, availability during topology changes;
 *Support for access to caches either transactionally or non-transactionally;
