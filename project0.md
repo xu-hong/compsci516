@@ -1,4 +1,4 @@
-* Infinispan
+#### Infinispan
 
 **Strength**
 * In-memory access: fast;
