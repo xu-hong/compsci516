@@ -29,7 +29,7 @@
 #### Red Hat JBoss Data Grid  
 
 **Strength** and the **Weakness**: same as Infinispan (since it is an ecosystem which is built around Infinispan)
-***Reference**
+**Reference**
 * White paper, <Red Hat JBoss Data Grid 6.4 Beta Getting Started Guide>
 * White paper, <Improving Application Scalability with In-Memory Data Grids>
 
@@ -49,11 +49,13 @@
 * Schema-less key/value to overcome the constraints of traditional database;
 * Also allow standard SQL to query in-memory data as well as distributed join,
 * Support for Write-Through And Write-Behind Caching to persistent storage.
-***Weakness**
+
+**Weakness**
 * More apt to complement traditional database rather than to replace it;
 * Network bandwidth may become the bottleneck.
 * Less strict schema may require more validation on application data layer.
-***Reference**
+
+**Reference**
 * GridGain & Hadoop: Differences & Synergies, http://gridgain.com/gridgain-hadoop-differences-synergies/
 * In-Memory Data Grid: Explained, http://gridgain.com/in-memory-data-grid-explained/
 * In-Memory Data Fabric, http://gridgain.com/products/in-memory-data-fabric/
@@ -100,7 +102,7 @@
 
 
 #### BigMemory
-* An upgrade of Ehcache with support for off heap data overflow to better work with JVM Garbage Collection
+An upgrade of Ehcache with support for off heap data overflow to better work with JVM Garbage Collection
 
 
 
@@ -130,7 +132,7 @@
 
 
 #### IBM eXtreme Scale  
-* IBM’s counterpart of Oracle Coherence: 
+IBM’s counterpart of Oracle Coherence: 
 ⋅⋅* Better integration with WAS; 
 ⋅⋅* failure or maintenance; 
 ⋅⋅* Less expensive price.
