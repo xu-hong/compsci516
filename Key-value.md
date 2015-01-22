@@ -169,7 +169,7 @@ Key-value store based on Berkeley DB Java Edition.
 * Flexible key/value type, entries sorted by key;
 * Priority on random write performance;
 * Dependency free;
-* Snapshot, which provides a **Reference** to the state of the database at a point in time.
+* Snapshot, which provides a reference to the state of the database at a point in time.
 
 **Weakness**
 * A database library without client-server support builtin;
@@ -202,6 +202,7 @@ Key-value store based on Berkeley DB Java Edition.
 
 ## MagnetoDB
 A key-value store NoSQL service for OpenStack (a cloud computing operating system), MagnetoDB provides:
+
 **Strength**
 * Horizontal scalability, 
 * High availability,
