@@ -29,6 +29,7 @@
 #### Red Hat JBoss Data Grid  
 
 **Strength** and the **Weakness**: same as Infinispan (since it is an ecosystem which is built around Infinispan)
+
 **Reference**
 * White paper, <Red Hat JBoss Data Grid 6.4 Beta Getting Started Guide>
 * White paper, <Improving Application Scalability with In-Memory Data Grids>
@@ -128,14 +129,14 @@ An upgrade of Ehcache with support for off heap data overflow to better work wit
 * Licensing model.
 
 **Reference**
-* White paper <ORACLE COHERENCE 12C>
+* White paper, <ORACLE COHERENCE 12C>
 
 
 #### IBM eXtreme Scale  
 IBM’s counterpart of Oracle Coherence: 
-⋅⋅* Better integration with WAS; 
-⋅⋅* failure or maintenance; 
-⋅⋅* Less expensive price.
+* Better integration with WAS; 
+* Features like Disk Off-load or Disk Snapshot support enables faster restoration of the grid post failure or maintenance;  
+* Less expensive price.
 
 **Reference**
 * http://whywebsphere.com/2012/07/03/data-grids-and-caching-ibm-or-oracle/
@@ -148,18 +149,19 @@ IBM’s counterpart of Oracle Coherence:
 * Better use of memory with distributed memory object caching;
 * In-memory key-value store for database calls, speeding up dynamic web applications by alleviating database load;
 * Near O(1) for every memcached operation.
-***Weakness**
+**Weakness**
 * Not a good fit for persistent storage;
 * No clustering thus no consistency provided;
 * Unreliable;
 * Scaling requires code update on client applications.
-***Reference**
+**Reference**
 * http://parsa.epfl.ch/cloudsuite/memcached.html
 * https://code.google.com/p/memcached/wiki/NewStart
 
 
 #### AWS ElastiCache, AWS ElastiCache with Redis
 ElastiCache is a web service that supports Memcached (or Redis) as in-memory cache engine. It possesses the strength of that of Memcached and also adds:
+
 **Strength**
 * Simple to deploy and manage with management console or simple APIs;
 * Enhancement in elasticity and scalability, auto discover of new nodes;
@@ -167,7 +169,7 @@ ElastiCache is a web service that supports Memcached (or Redis) as in-memory cac
 
 **Weakness**
 * No clustering thus no consistency provided.
-***Reference**
+**Reference**
 * Caching architectures using Memcached & Amazon ElastiCache, http://harish11g.blogspot.in/2012/11/amazon-elasticache-memcached-ec2.html
 * Amazon ElastiCache User Guide
 
@@ -178,7 +180,7 @@ Memcached Cloud is a fully-managed service for hosting and running Memcached in 
 * Enhancement in reliability through auto failure detection and recovery;
 * Backup to and imports from FTP server and other cloud storages;
 * Enhancement in elasticity and scalability.
-***Reference**
+**Reference**
 * https://redislabs.com/memcached-cloud
 
 
@@ -267,7 +269,9 @@ MemCachier manages and scales clusters of memcache servers.
 
 #### Pivotal  GemFire  XD 
 Pivotal GemFire with SQL query support: Supports SQL queries of data over distributed nodes that can be optimized with indexes on key values.
-**Reference**: http://www.pivotal.io/big-data/pivotal-gemfire-xd
+
+**Reference**
+* http://www.pivotal.io/big-data/pivotal-gemfire-xd
 
 #### Scaleout Software
 
