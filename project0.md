@@ -1137,6 +1137,10 @@
 * http://www.mysql.com/why-mysql/topreasons.html
 * GenieDB
 * datacenter or cloud outage and faster response times for users anywhere in the world.
+
+
+
+
 * MariaDB
 
 **Strength**
@@ -1149,6 +1153,10 @@
 **Reference**
 * https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/
 * https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/
+
+
+
+
 * MariaDB Enterprise
 **Strength**
 * technical support, backup and recovery.
@@ -1172,6 +1180,8 @@
 **Reference**
 *.html
 * databases-comparison/
+
+
 * TokuDB
 **Strength**
 * An open source, high-performance storage engine for MySQL, MariaDB, and Percona Server;
@@ -1184,9 +1194,15 @@
 **Reference**
 * http://www.tokutek.com/tokudb-for-mysql/
 * differences/
+
+
 * RackSpace Cloud Databases
 * and operation.
+
+
 * ScaleDB
+
+
 **Strength**
 * A data platform that transforms MySQL/MariaDB into scalable database cluster;
 * High scalability: no sharding, shared-data approach;
@@ -1770,158 +1786,9 @@ Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-
 
 
 
-#### Pivotal HD: HAWQ
-**Strength**
-* HAWQ is a parallel SQL query engine that combines the key technological advantages of Pivotal Analytic Database with the scalability and convenience of Hadoop; 
-* High availability, tolerates disk level and node level failures;
-* Transactions on Hadoop. 
-**Weakness**
-* Geared towards OLAP not OLTP.
-**Reference**
-* White Paper, <Pivotal HD: HAWQ, A TRUE SQL ENGINE FOR HADOOP>
-
-
-#### Hadapt
-**Strength**
-* A native implementation of SQL to the Apache Hadoop, which allows interactive SQL-based analysis of massive data set; 
-* All data – structured, unstructured, and semi-structured – accessible via SQL.
-**Weakness**
-* Geared towards OLAP not OLTP;
-* No trasaction.
-**Reference**
-* Hadapt, Schemaless SQL Overview, http://hadapt.com/schemaless-sql-overview/
-
-
-#### JethroData
-**Strength**
-* A column store SQL Engine to the Apache Hadoop; 
-* High performance ad-hoc query: every column is indexed by default, and indexes span entire dataset;
-* Shared everything structure, storage and compute scale independently.
-
-**Weakness**
-* Geared towards OLAP not OLTP;
-* No trasaction.
-**Reference**
-* Hadapt, Schemaless SQL Overview, http://hadapt.com/schemaless-sql-overview/
-
-####CitusData
-**Strength**
-* CitusDB scales out PostgreSQL through sharding and replication;
-* High availability: real-time recovery;
-* Semi-structured data support: run distributed SQL queries on JSON and log files.
-**Weakness**
-* Geared towards OLAP not OLTP.
-**Reference**
-* CitusData product, http://www.citusdata.com/products
 
 
 
-#### Impala
-**Strength**
-* A transactional SQL Engine on the Apache Hadoop geared towards analytics; 
-* Low latency, interactive performance at Hadoop scale;
-* Structured, semi-structured, and unstructured data with schema-on-read or schema-on-write capabilities.
-**Weakness**
-* Geared towards OLAP not OLTP;
-* Impala uses a custom C++ runtime, it doesn't support Hive UDFs;
-* Not fault tolerant (queries must be restarted if a node fails);
-**Reference**
-* How does Cloudera Impala compare to Apache Shark (now part of Spark)?, http://www.quora.com/How-does-Cloudera-Impala-compare-to-Apache-Shark-now-part-of-Spark
-* Cloudera Impala, http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/impala.html
-
-
-
-#### IBM Big SQL
-**Strength**
-* Enables InfoSphere BigInsightsusers to query Hadoop data using industry-standard SQL;
-* Geared towards OLTP.
-**Weakness**
-* No fault tolerance;
-* Closed ecosystem;
-* No transaction.
-**Reference**
-* What's the big deal about Big SQL?, http://www.ibm.com/developerworks/library/bd-bigsql/
-
-#### Presto
-**Strength**
-* An distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes;
-* Allows querying data on Hive, Cassandra, relational databases as well as data from combined multiple sources.
-**Weakness**
-* Weakness of the underlying systems.
-**Reference**
-* Presto Documantation, http://prestodb.io/docs/current/
-
-
-#### Apache Drill
-**Strenth**
-* A low latency SQL query engine for multi-structured datasets on Hadoop and NoSQL;
-* Compatibility with existing SQL environments and Apache Hive deployments;
-* Self-describing data support without centralized schema definitions/management;
-* Support for complex/multi-structured data types;
-* ANSI SQL support (not SQL "Like") & BI tool integration;
-* Extensibility to go beyond Hadoop environments.
-
-**Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
-
-**Reference**
-* Why Drill, http://drill.apache.org/why/
-
-
-#### Apache Hive
-**Strenth**
-* A data warehouse software facilitates querying and managing large datasets residing in distributed storage;
-* Query  data using a SQL-like language called HiveQL;
-* A matured and proven solution that runs on proven MapReduce framework;
-* Can be mapped to HBase and other systems easily.	
-
-**Weakness**
-* Query performance;
-* No transaction, not for OLTP.
-
-**Reference**
-* Hive documantation, https://cwiki.apache.org/confluence/display/Hive/Home
-* Hive, Impala and Presto – The War on SQL over Hadoop, https://bigdatanerd.wordpress.com/2013/11/19/war-on-sql-over-hadoop/
-
-
-
-
-#### MammothDB
-**Strenth**
-* A native columnar MySQL Engine on the Apache Hadoop with integration of BI tools; 
-* Designed for low cost.
-**Weakness**
-* Geared towards OLAP not OLTP;
-* No trasaction;
-* Fledgling.
-**Reference**
-* MammothDB: The Easy Jet of Big Data, http://dataconomy.com/mammothdb-easy-jet-big-data/
-
-
-
-#### Apache Tajo
-**Strenth**
-* A robust big data relational and distributed data warehouse system for Apache Hadoop;
-* Designed for low-latency and complex ad-hoc queries, online aggregation, and ETL on HDFS and other data sources;
-* ANSI/ISO SQL standard compliance;
-* Hive metastore integration for access to Hive datasets.
-**Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
-**Reference**
-* Tajo documentation, http://tajo.apache.org/
-
-
-
-
-#### NGDATA
-**Strenth**
-* A specialized data analytic platform on Hadoop, geared towards real-time customer DNA analysis.
-**Weakness**
-* Niche application.
-**Reference**
-* NGDATA, Big Data Technology, http://www.ngdata.com/knowledge-center/big-data-technology/
 
 
 #### Oracle Big Data Appliance 
@@ -1944,198 +1811,186 @@ Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-
 * https://cloud.oracle.com/bigdata
 
 
-#### Cloudera
+
+#### Apache Storm
+
 **Strength**
-* Enterprise-ready Hadoop distributions with enduring security and stability;
-* Scalability, shared-nothing computing framework;
-* Support MapReduce as well as YARN;
-* Has a proprietary management software Cloudera Manager, SQL query handling interface Impala, as well as Cloudera Search for easy and real-time access of products. 
-**Weakness**
-* Licensing fee;
-* Not an optimal choice for OLTP.
-**Reference**
-* Cloudera FAQ, http://www.cloudera.com/content/cloudera/en/about/faqs.html#five
-* Cloudera vs Hortonworks vs MapR: Comparing Hadoop Distributions, http://www.experfy.com/blog/cloudera-vs-hortonworks-comparing-hadoop-distributions/
+* Processing massive amounts of streaming events with real-time responsiveness;
+* Integrates with any queueing system and any database system;
+* Scalability: adjust the parallelism of running topologies on the fly;
+* High-available and fault tolerant;
+* Simple API;
+* Guarantee no data loss.
 
-#### Spark
+**Weakness**
+* No well-defined framework;
+* Not for batch-mode processing or transactions;
+* No persistency.
+
+**Reference**
+* Apache Storm, Rationale, https://storm.apache.org/documentation/Rationale.html
+* Real-Time Stream Processing as Game Changer in a Big Data World with Hadoop and Data Warehouse, http://www.infoq.com/articles/stream-processing-hadoop
+
+
+#### Apache S4
+
 **Strength**
-* Built on top of Hadoop,extends Hive to dramatically speed up both in-memory and on-disk queries; 
-* Designed to support both short and long-running queries, can recover from mid-query faults;
-* Support SQL queries, streaming data, and complex analytics such as machine learning and graph algorithms out-of-the-box.
+* Processing massive amounts of streaming events with real-time responsiveness;
+* Scalability: adjust the parallelism of running topologies on the fly;
+* High-available and fault tolerant;
+* Simple API, well-defined Map/Reduce like framework, easy to program.
+
 **Weakness**
-* Geared towards OLAP not OLTP.
+* No guaranteed data delivery;
+* Not for batch-mode processing or transactions.
+
 **Reference**
-* How does Cloudera Impala compare to Apache Shark (now part of Spark)?, http://www.quora.com/How-does-Cloudera-Impala-compare-to-Apache-Shark-now-part-of-Spark
-* Hadoop vs Spark, http://stackoverflow.com/questions/25267204/hadoop-vs-spark
+* http://incubator.apache.org/s4/
+* Distributed stream processing showdown: S4 vs Storm, http://gdfm.me/2013/01/02/distributed-stream-processing-showdown-s4-vs-storm/
 
 
 
-#### MetaScale
-**Strenth**
-* Big Data as a Service (BDaaS) to build, operate and support a custom-designed computing platform and solution stack for running Hadoop and NoSQL technologies within a customer’s data center.
-**Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
-**Reference**
-* MetaScale, Big Data Platform, http://www.metascale.com/what-we-offer/big-data-platform.html#.VL6uBidrpTM
+#### SQLStream
 
-
-#### Hortonworks
 **Strength**
-* Enterprise-ready Hadoop distributions without additional proprietary software;
-* Scalability, shared-nothing computing framework;
-* Support MapReduce as well as YARN;
-* 100% open source and free.
+* Real-time stream processing platform with enterprise support;
+* Proven more throughput and lower latency;
+* SQL for stream processing.
+
 **Weakness**
-* Not an optimal choice for OLTP.
+* Proprietary;
+* Not for batch-mode processing or transactions.
+
 **Reference**
-* Cloudera vs Hortonworks vs MapR: Comparing Hadoop Distributions, http://www.experfy.com/blog/cloudera-vs-hortonworks-comparing-hadoop-distributions/
+* SQLStream, SQL for stream processing, http://www.sqlstream.com/stream-processing-with-sql/
 
 
-#### Microsoft HDInsight
+#### DataTorrent
+
 **Strength**
-* Hadoop solution on Azure and provides implementations of Storm, HBase, Pig, Hive, Sqoop, Oozie, Ambari, and so on; 
-* Integrates with business intelligence (BI) tools such as Excel, SQL Server Analysis Services, and SQL Server Reporting Services;
-* Process unstructured and semi-structured data;
-* High availability and reliability of clusters.
+* Real-time stream processing platform built upon Hadoop with enterprise support;
+* Native support for application window abstraction;
+* Separate the functional specifications from the operability of the application;
+* Built-in fault-tolerance, self-healing and state recovery.
 **Weakness**
-* No native SQL, no transactions.
+* Proprietary;
+* Not for batch-mode processing or transactions.
+
 **Reference**
-HDInsight documentation, http://azure.microsoft.com/en-us/documentation/services/hdinsight/
+* Open source “Storm” vs. Commercially available “Data Torrent", https://mybigdatajourney.wordpress.com/2014/07/24/open-source-storm-vs-commercially-available-data-torrent/
+* Crossing the Big Data Stream with DataTorrent, http://www.datanami.com/2014/04/23/crossing_the_big_data_stream_with_datatorrent/
 
 
-#### IBM BigInsights
+#### FeedZai
+
 **Strength**
-* Robust SQL on Hadoop with Big SQL; 
-* Integrates with analytics such as R, text analytics, Real-time Streaming Analytics, etc;
-* Process unstructured and structured data;
-* Fault-tolerant, secure, POSIX Compliant file system option.
+* Real-time stream processing geared towards fraud detection with  machine learning;
+* Data visualization and dashboard interface.
+
 **Weakness**
-* Expensive;
-* For OLAP not OLTP.
+* Proprietary;
+* Limited use case.
+
 **Reference**
-* Understanding InfoSphere BigInsights, http://www.ibm.com/developerworks/data/library/techarticle/dm-1110biginsightsintro/
+* FeedZai, Big Data Solutions, https://www.feedzai.com/home/big-data-insight/
 
+#### TIBCO StreamBase
 
-#### MapR
 **Strength**
-* Enterprise-ready Hadoop distributions with high availability, disaster recovery, security, and full data protection;
-* Can be easily accessed as traditional network attached storage (NAS) with read-write capabilities;
-* Works with nested/hierarchical data structures, schema discovery and NoSQL, Hadoop as well as traditional RDBMS;
-* Real-time stream computational engines;
-* Point-in-time consistency for all files and tables.
+* Real-time stream processing platform with enterprise support;
+* Rapid time from development to deployment with graphical event-flow language;
+* Shorter development cycles with easier maintenance.
+
 **Weakness**
-* Not pure HDFS, proprietary File System.
+* Proprietary;
+* Not for batch-mode processing or transactions.
+
 **Reference**
-* Cloudera vs Hortonworks vs MapR – Has MapR Already Won This Contest?, http://data-magnum.com/cloudera-vs-hortonworks-vs-mapr-has-mapr-already-won-this-contest
+* White Paper, TIBCO StreamBase Overview
 
 
-#### AWS EMR
+
+#### Software AG Apama
+
 **Strength**
-* Easy to configure and deploy with a flexibility of data stores;
-* Elastic scalability and reliability;
-* Easy to use web UI and robust integration with S3.
-**Weakness**
-* For OLAP not OLTP;
-* May become expensive for production system.
-**Reference**
-* Amazon EMR Product Details, http://aws.amazon.com/elasticmapreduce/details/
+* Enterprise real-time stream processing platform with enterprise support.
+* Rich analytics tooling, visualization of real-time analytics;
+* Static data cached for fast, in-memory access and event enrichment;
 
-#### Goolge Compute Engine
+
+
+**Weakness**
+* Proprietary;
+* Not for batch-mode processing or transactions.
+
+**Reference**
+* http://www.softwareag.com/corporate/products/apama_webmethods/analytics/capabilities/default.asp
+
+
+#### Lokad
+
 **Strength**
-* Large-scale workloads on virtual machines hosted on Google's infrastructure with multiple choices of dataplatforms;
-* High-performant, scalable, highly secure and reliable virtual machines;
-* Global load-balancing to achieve maximum performance, throughput and availability at low cost.
-**Weakness**
-* Weaker support and SLA compared to AWS.
-**Reference**
-* 4 Things CIOs Must Know: Google Compute Engine (GCE) + the Public Cloud, http://siliconangle.com/blog/2013/05/28/round-up-cios-must-know-for-google-compute-engine-gce-the-public-cloud/
-* GCE Features, https://cloud.google.com/compute/#features
+* Real-time stream processing geared towards commerce and demand forcast.
 
-#### Zettaset
+**Weakness**
+* Proprietary;
+* Limited use case.
+
+**Reference**
+* Lokad, Technology, http://www.lokad.com/forecasting-technology
+
+
+#### Amazon Kinesis 
+
 **Strength**
-* A Hadoop cluster management software for the enterprise with easy administration;
-* Enterprise security, high availability, and performance requirements.
-**Weakness**
-* For OLAP not OLTP;
-* No query language;
-* Weak speed and performance compared to other competitors.
-**Reference**
-* Zettaset, Why Zettaset, http://www.zettaset.com/index.php/company/why-zettaset/
+* Full-managed real-time stream processing platform with support;
+* Elastic scalability;
+* Can emit data from Amazon Kinesis to other AWS services;
+* CloudWatch Monitoring built-in.
 
-#### Treasure Data
+**Weakness**
+* Not for batch-mode processing or transactions.
+
+**Reference**
+* Kinesis Details, http://aws.amazon.com/kinesis/details/
+
+
+#### Google Cloud Dataflow
+
 **Strength**
-* End-to-end cloud-based, managed service for data collection, storage and analysis;
-* Easy for data collecting;
-* Flexible analytical methods;
-* Loosely-coupled, multi-layer architecture that allows I/O, processing, and storage layers to independently scale;
-* Support infrastructure management and monitoring.
-**Weakness**
-* For OLAP not OLTP.
-**Reference**
-* Treasure Data, Technology, http://www.treasuredata.com/technology.php
-* Treasure Data takes aim at data warehousing giants, http://research.gigaom.com/2012/09/treasure-data-takes-aim-at-data-warehousing-giants/
+* Full-managed real-time stream processing platform;
+* Elastic scalability;
+* Integration with other Google services;
+* Support stream and batch-mode.
 
-#### Qubole
+**Weakness**
+* Still in Alpha.
+
+**Reference**
+* MapReduce Successor Google Cloud Dataflow is a Game Changer for Hadoop Thunder, http://cloudtimes.org/2014/07/07/mapreduce-successor-google-cloud-dataflow-is-a-game-changer-for-hadoop-thunder/
+
+
+#### Guavus
 **Strength**
-* Everything Big Data as a Service: complete Hadoop-based Big Data service on the cloud, from query editor to storage;
-* Auto scaling and spot instance pricing;
-* Optimized Hiva and improved S3 performance.
+* End-to-End streaming analytics platform and decisioning applications for various industries;
+* Near real-time streaming with built-in data science.
 **Weakness**
-* For OLAP not OLTP.
+* Proprietary.
 **Reference**
-* Qubole Features, http://www.qubole.com/features/
+* http://www.guavus.com/products/
 
-#### Mortar Data
+
+#### IBM InfoSphere Streams
+
 **Strength**
-* Hadoop-based data platform with easy deployment and administration;
-* Techologies of Mortar, Pig, AWS EMR, Luigi, and R, with flexible integration with different databases.
+* Real-time streaming processing platform for analysis of large structured and unstructured data volumes;
+* Integration with IBM's other services;
+* Comes with IBM Accelerator for Machine Data Analytics, Social Data Analytics and Telecommunications Event Data Analytics. 
+
 **Weakness**
-* For OLAP not OLTP.
+* Not for batch-mode processing or transactions;
+* Proprietary.
+
 **Reference**
-* Mortar Data, Platform, https://www.mortardata.com/platform
+* White Paper, InfoSphere Streams Quick Start Edition Overview
 
-
-#### Infochimps
-**Strength**
-* A scalable cloud services that supports streaming data and real-time analytics;
-* Support NoSQL database and ad hoc, query-based analytics;
-* Elastic Hadoop clusters and batch analytics.
-**Weakness**
-* For OLAP not OLTP.
-**Reference**
-* Infochimps, Overview, http://www.infochimps.com/infochimps-cloud/overview/
-
-#### MetaMarkets
-**Strength**
-* A scalable data platform geared toward real-time stream data analytics;
-* Fast speed with in-memory store;
-* Exploratory visualizations with proprietary visualization framework Facet.js.
-**Weakness**
-* For OLAP not OLTP;
-* Not optimized for static data.
-**Reference**
-* MetaMarkets, Technology, https://metamarkets.com/what-we-do/technology/
-
-
-#### Altiscale
-**Strength**
-* Hadoop-based data platform with easy deployment and administration;
-* Industry’s lowest total cost of ownership;
-**Weakness**
-* For OLAP not OLTP;
-* Limited features compared to other Hadoop cloud vendors.
-**Reference**
-* Altiscale, Features, https://www.altiscale.com/hadoop-as-a-service/hadoop-features-benefits/
-
-
-#### Softlayer
-**Strength**
-* Big Data as a Service built upon high-performance hardware;
-* Advanced network infrastructure with exceptional bandwidth and connectivity for the highest speed and reliability;
-* Automated deployment and management of everything..
-**Weakness**
-* For OLAP not OLTP;
-* Limited flexibility of services.
-**Reference**
-* Softlayer, Our Platform, http://www.softlayer.com/automation-control
