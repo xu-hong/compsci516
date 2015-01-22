@@ -185,6 +185,7 @@ Memcached Cloud is a fully-managed service for hosting and running Memcached in 
 * Enhancement in reliability through auto failure detection and recovery;
 * Backup to and imports from FTP server and other cloud storages;
 * Enhancement in elasticity and scalability.
+
 **Reference**
 * https://redislabs.com/memcached-cloud
 
@@ -195,7 +196,8 @@ Memcached Cloud is a fully-managed service for hosting and running Memcached in 
 * Enhancement in availability;
 * Backup to and imports from FTP server and other cloud storages;
 * Enhancement in elasticity and scalability.
-***Reference**
+
+**Reference**
 * https://redislabs.com/redis-cloud
 
 ## Memcachier
