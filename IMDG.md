@@ -1,7 +1,7 @@
 # In-memory / Data Grid 
 
 
-#### Infinispan
+## Infinispan
 
 **Strength**
 * In-memory access: fast;
@@ -26,7 +26,7 @@
 * Jags Ramnarayan on In-Memory Data Grids, http://www.infoq.com/articles/in-memory-data-grids
 
 
-#### Red Hat JBoss Data Grid  
+## Red Hat JBoss Data Grid  
 
 **Strength** and the **Weakness**: same as Infinispan (since it is an ecosystem which is built around Infinispan)
 
@@ -37,7 +37,7 @@
 
 
 
-#### GridGain  
+## GridGain  
 
 **Strength**
 * Integrate fast In-Memory MapReduce implementation;
@@ -48,12 +48,12 @@
 * Greater concurrency with multiversion concurrency control;
 * Support for off heap data overflow to better work with JVM Garbage Collection;
 * Schema-less key/value to overcome the constraints of traditional database;
-* Also allow standard SQL to query in-memory data as well as distributed join,
+* Also allow standard SQL to query in-memory data as well as distributed join;
 * Support for Write-Through And Write-Behind Caching to persistent storage.
 
 **Weakness**
 * More apt to complement traditional database rather than to replace it;
-* Network bandwidth may become the bottleneck.
+* Network bandwidth may become the bottleneck;
 * Less strict schema may require more validation on application data layer.
 
 **Reference**
@@ -62,10 +62,10 @@
 * In-Memory Data Fabric, http://gridgain.com/products/in-memory-data-fabric/
 
 
-#### Hazelcast
+## Hazelcast
 
 **Strength**
-* Easy scale out by adding nodes, dynamically rebalance data across the new grid.; 
+* Easy scale out by adding nodes, dynamically rebalance data across the new grid; 
 * Elastic with consistent hashing: availability during topology changes;
 * Support for access to caches either transactionally or non-transactionally;
 * Greater concurrency with multiversion concurrency control;
@@ -85,7 +85,7 @@
 
 
 
-#### Ehcache
+## Ehcache
 
 **Strength**
 * Fast, easy-to-set-up and light weight in-memory data grids (IMDG);
@@ -102,12 +102,12 @@
 * http://ehcache.org/documentation/2.6/get-started/about-distributed-cache
 
 
-#### BigMemory
-An upgrade of Ehcache with support for off heap data overflow to better work with JVM Garbage Collection
+## BigMemory
+An upgrade of Ehcache with support for off heap data overflow to better work with JVM Garbage Collection.
 
 
 
-#### CloudTran
+## CloudTran
 
 **Strength**
 * Extends in-memory data grids (IMDG) by adding scalable transactions across the grid and implementing guaranteed persistence to databases; 
@@ -116,11 +116,12 @@ An upgrade of Ehcache with support for off heap data overflow to better work wit
 **Weakness**
 * Mainly invented for the purpose of improving Coherence;
 * The emphasis on transaction might impede its performance.
-***Reference**
+
+**Reference**
 * White paper,  CloudTran Technology Genesis
 
 
-#### Oracle Coherence
+## Oracle Coherence
 
 **Strength**
 * The commercial counterpart of Hazelcast. IMDG that provides availability, scalability, parallel query and parallel transaction processing, etc.
@@ -132,7 +133,7 @@ An upgrade of Ehcache with support for off heap data overflow to better work wit
 * White paper, ORACLE COHERENCE 12C
 
 
-#### IBM eXtreme Scale  
+## IBM eXtreme Scale  
 IBM’s counterpart of Oracle Coherence: 
 * Better integration with WAS; 
 * Features like Disk Off-load or Disk Snapshot support enables faster restoration of the grid post failure or maintenance;  
@@ -142,24 +143,26 @@ IBM’s counterpart of Oracle Coherence:
 * http://whywebsphere.com/2012/07/03/data-grids-and-caching-ibm-or-oracle/
 * Redbook,  WebSphere eXtreme Scale V8.6 Key Concepts and Usage Scenarios
 
-#### Memcached
+## Memcached
 
 **Strength**
 * Simple yet fast;
 * Better use of memory with distributed memory object caching;
 * In-memory key-value store for database calls, speeding up dynamic web applications by alleviating database load;
 * Near O(1) for every memcached operation.
+
 **Weakness**
 * Not a good fit for persistent storage;
 * No clustering thus no consistency provided;
 * Unreliable;
 * Scaling requires code update on client applications.
+
 **Reference**
 * http://parsa.epfl.ch/cloudsuite/memcached.html
 * https://code.google.com/p/memcached/wiki/NewStart
 
 
-#### AWS ElastiCache, AWS ElastiCache with Redis
+## AWS ElastiCache, AWS ElastiCache with Redis
 ElastiCache is a web service that supports Memcached (or Redis) as in-memory cache engine. It possesses the strength of that of Memcached and also adds:
 
 **Strength**
@@ -169,12 +172,13 @@ ElastiCache is a web service that supports Memcached (or Redis) as in-memory cac
 
 **Weakness**
 * No clustering thus no consistency provided.
+
 **Reference**
 * Caching architectures using Memcached & Amazon ElastiCache, http://harish11g.blogspot.in/2012/11/amazon-elasticache-memcached-ec2.html
 * Amazon ElastiCache User Guide
 
 
-#### RedisLabs Memcached Cloud
+## RedisLabs Memcached Cloud
 Memcached Cloud is a fully-managed service for hosting and running Memcached in a reliable and fail-safe manner.
 **Strength**
 * Enhancement in reliability through auto failure detection and recovery;
@@ -184,7 +188,7 @@ Memcached Cloud is a fully-managed service for hosting and running Memcached in 
 * https://redislabs.com/memcached-cloud
 
 
-#### RedisLabs Redis Cloud
+## RedisLabs Redis Cloud
 
 **Strength**
 * Enhancement in availability;
@@ -193,7 +197,7 @@ Memcached Cloud is a fully-managed service for hosting and running Memcached in 
 ***Reference**
 * https://redislabs.com/redis-cloud
 
-#### Memcachier
+## Memcachier
 MemCachier manages and scales clusters of memcache servers. 
 
 **Strength**
@@ -206,7 +210,7 @@ MemCachier manages and scales clusters of memcache servers.
 
 
 
-#### GigaSpaces XAP
+## GigaSpaces XAP
 
 **Strength**
 * Veteran product in IMDG market; 
@@ -227,7 +231,7 @@ MemCachier manages and scales clusters of memcache servers.
 * White Paper,  Elastic Caching Platforms, Q2 2010
 
 
-#### TIBCO  ActiveSpaces
+## TIBCO  ActiveSpaces
 
 **Strength**
 * Support SQL-like query to in-memory data;
@@ -247,7 +251,7 @@ MemCachier manages and scales clusters of memcache servers.
 
 
 
-#### Pivotal  GemFire  
+## Pivotal  GemFire  
 
 **Strength**
 * Schema-less key/value to overcome the constraints of traditional database;
@@ -267,13 +271,13 @@ MemCachier manages and scales clusters of memcache servers.
 * White Paper,  Elastic Caching Platforms, Q2 2010
 * http://www.vmware.com/products/vfabric-gemfire/features.html
 
-#### Pivotal  GemFire  XD 
+## Pivotal  GemFire  XD 
 Pivotal GemFire with SQL query support: Supports SQL queries of data over distributed nodes that can be optimized with indexes on key values.
 
 **Reference**
 * http://www.pivotal.io/big-data/pivotal-gemfire-xd
 
-#### Scaleout Software
+## Scaleout Software
 
 **Strength**
 * A suite of IMDG products that provides in-memory map/reduce implementation, faster Hadoop MapReduce execution time;
@@ -291,7 +295,7 @@ Pivotal GemFire with SQL query support: Supports SQL queries of data over distri
 **Reference**
 * ScaleOut hServer V2 Java Programmer's Guide
 
-#### IronCache
+## IronCache
 
 **Strength**
 * Configurable data purging: allows Time-to-live (TTL) to be set for in-memory caches;
@@ -312,7 +316,7 @@ Pivotal GemFire with SQL query support: Supports SQL queries of data over distri
 * http://www.iron.io/worker
 
 
-#### Redis
+## Redis
 
 **Strength**
 * Very fast, good concurrency support;
@@ -321,8 +325,9 @@ Pivotal GemFire with SQL query support: Supports SQL queries of data over distri
 * Master-slave replication supported to ensure highly availability;
 * Transaction supported with optimistic locking;
 * Persistence to disk;
-* Scalability when used as cache;
-***Weakness**
+* Scalability when used as cache.
+
+**Weakness**
 * Immature clustering thus no consistency provided;
 * Dataset size limited to computer RAM;
 * No scalability when used as data store (Redis Cluster is currently in beta).
@@ -334,7 +339,7 @@ Pivotal GemFire with SQL query support: Supports SQL queries of data over distri
 
 
 
-#### ObjectRocket Redis, RedisGreen, Redis-to-go
+## ObjectRocket Redis, RedisGreen, Redis-to-go
 Commercial product build around Redis with 24x7x365 support and easy interface.
 
 **Reference**
