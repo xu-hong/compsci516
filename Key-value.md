@@ -40,7 +40,7 @@
 * No ACID transactions;
 * Availability over consistency: a master-less system which is eventual consistent.
 
-***Reference**
+**Reference**
 * White Paper, From Relational to Riak – A Technical Brief
 * Basho Riak - NoSQL Key Value Store Designed for Scale, http://www.infoq.com/news/2014/10/Riak-NoSQL-designed-for-scale
 * http://basho.com/riak-vs-cassandra/
