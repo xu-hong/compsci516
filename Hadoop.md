@@ -1,5 +1,95 @@
 # Hadoop ecosystem
 
+## Apache Drill
+
+**Strenth**
+* A low latency SQL query engine for multi-structured datasets on Hadoop and NoSQL;
+* Compatibility with existing SQL environments and Apache Hive deployments;
+* Self-describing data support without centralized schema definitions/management;
+* Support for complex/multi-structured data types;
+* ANSI SQL support (not SQL "Like") & BI tool integration;
+* Extensibility to go beyond Hadoop environments.
+
+
+**Weakness**
+* Not an optimal choice for OLTP/operational application;
+* No trasaction.
+
+
+**Reference**
+* Why Drill, http://drill.apache.org/why/
+
+
+## Apache Hive
+
+**Strenth**
+* A data warehouse software facilitates querying and managing large datasets residing in distributed storage;
+* Query  data using a SQL-like language called HiveQL;
+* A matured and proven solution that runs on proven MapReduce framework;
+* Can be mapped to HBase and other systems easily.	
+
+**Weakness**
+* Query performance;
+* No transaction, not for OLTP.
+
+
+**Reference**
+* Hive documantation, https://cwiki.apache.org/confluence/display/Hive/Home
+* Hive, Impala and Presto – The War on SQL over Hadoop, https://bigdatanerd.wordpress.com/2013/11/19/war-on-sql-over-hadoop/
+
+
+
+
+## MammothDB
+
+**Strenth**
+* A native columnar MySQL Engine on the Apache Hadoop with integration of BI tools; 
+* Designed for low cost.
+
+**Weakness**
+* Geared towards OLAP not OLTP;
+* No trasaction;
+* Fledgling.
+
+**Reference**
+* MammothDB: The Easy Jet of Big Data, http://dataconomy.com/mammothdb-easy-jet-big-data/
+
+
+
+## Apache Tajo
+
+**Strenth**
+* A robust big data relational and distributed data warehouse system for Apache Hadoop;
+* Designed for low-latency and complex ad-hoc queries, online aggregation, and ETL on HDFS and other data sources;
+* ANSI/ISO SQL standard compliance;
+* Hive metastore integration for access to Hive datasets.
+
+**Weakness**
+* Not an optimal choice for OLTP/operational application;
+* No trasaction.
+
+**Reference**
+* Tajo documentation, http://tajo.apache.org/
+
+
+
+
+
+## Cloudera
+
+**Strength**
+* Enterprise-ready Hadoop distributions with enduring security and stability;
+* Scalability, shared-nothing computing framework;
+* Support MapReduce as well as YARN;
+* Has a proprietary management software Cloudera Manager, SQL query handling interface Impala, as well as Cloudera Search for easy and real-time access of products. 
+
+**Weakness**
+* Licensing fee;
+* Not an optimal choice for OLTP.
+
+**Reference**
+* Cloudera FAQ, http://www.cloudera.com/content/cloudera/en/about/faqs.html#five
+* Cloudera vs Hortonworks vs MapR: Comparing Hadoop Distributions, http://www.experfy.com/blog/cloudera-vs-hortonworks-comparing-hadoop-distributions/
 
 
 ## Pivotal HD: HAWQ
@@ -124,96 +214,6 @@
 * Presto Documantation, http://prestodb.io/docs/current/
 
 
-## Apache Drill
-
-**Strenth**
-* A low latency SQL query engine for multi-structured datasets on Hadoop and NoSQL;
-* Compatibility with existing SQL environments and Apache Hive deployments;
-* Self-describing data support without centralized schema definitions/management;
-* Support for complex/multi-structured data types;
-* ANSI SQL support (not SQL "Like") & BI tool integration;
-* Extensibility to go beyond Hadoop environments.
-
-
-**Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
-
-
-**Reference**
-* Why Drill, http://drill.apache.org/why/
-
-
-## Apache Hive
-
-**Strenth**
-* A data warehouse software facilitates querying and managing large datasets residing in distributed storage;
-* Query  data using a SQL-like language called HiveQL;
-* A matured and proven solution that runs on proven MapReduce framework;
-* Can be mapped to HBase and other systems easily.	
-
-**Weakness**
-* Query performance;
-* No transaction, not for OLTP.
-
-
-**Reference**
-* Hive documantation, https://cwiki.apache.org/confluence/display/Hive/Home
-* Hive, Impala and Presto – The War on SQL over Hadoop, https://bigdatanerd.wordpress.com/2013/11/19/war-on-sql-over-hadoop/
-
-
-
-
-## MammothDB
-
-**Strenth**
-* A native columnar MySQL Engine on the Apache Hadoop with integration of BI tools; 
-* Designed for low cost.
-
-**Weakness**
-* Geared towards OLAP not OLTP;
-* No trasaction;
-* Fledgling.
-
-**Reference**
-* MammothDB: The Easy Jet of Big Data, http://dataconomy.com/mammothdb-easy-jet-big-data/
-
-
-
-## Apache Tajo
-
-**Strenth**
-* A robust big data relational and distributed data warehouse system for Apache Hadoop;
-* Designed for low-latency and complex ad-hoc queries, online aggregation, and ETL on HDFS and other data sources;
-* ANSI/ISO SQL standard compliance;
-* Hive metastore integration for access to Hive datasets.
-
-**Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
-
-**Reference**
-* Tajo documentation, http://tajo.apache.org/
-
-
-
-
-
-## Cloudera
-
-**Strength**
-* Enterprise-ready Hadoop distributions with enduring security and stability;
-* Scalability, shared-nothing computing framework;
-* Support MapReduce as well as YARN;
-* Has a proprietary management software Cloudera Manager, SQL query handling interface Impala, as well as Cloudera Search for easy and real-time access of products. 
-
-**Weakness**
-* Licensing fee;
-* Not an optimal choice for OLTP.
-
-**Reference**
-* Cloudera FAQ, http://www.cloudera.com/content/cloudera/en/about/faqs.html#five
-* Cloudera vs Hortonworks vs MapR: Comparing Hadoop Distributions, http://www.experfy.com/blog/cloudera-vs-hortonworks-comparing-hadoop-distributions/
 
 ## Spark
 
