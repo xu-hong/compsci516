@@ -180,6 +180,7 @@ ElastiCache is a web service that supports Memcached (or Redis) as in-memory cac
 
 ## RedisLabs Memcached Cloud
 Memcached Cloud is a fully-managed service for hosting and running Memcached in a reliable and fail-safe manner.
+
 **Strength**
 * Enhancement in reliability through auto failure detection and recovery;
 * Backup to and imports from FTP server and other cloud storages;
