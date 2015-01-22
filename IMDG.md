@@ -31,8 +31,8 @@
 **Strength** and the **Weakness**: same as Infinispan (since it is an ecosystem which is built around Infinispan)
 
 **Reference**
-* White paper, <Red Hat JBoss Data Grid 6.4 Beta Getting Started Guide>
-* White paper, <Improving Application Scalability with In-Memory Data Grids>
+* White paper, Red Hat JBoss Data Grid 6.4 Beta Getting Started Guide
+* White paper, Improving Application Scalability with In-Memory Data Grids
 
 
 
@@ -81,7 +81,7 @@
 
 **Reference**
 * Java Caches: Ehcache, Hazelcast, Infinispan, https://labs.consol.de/java-caches/
-* White paper, <GridGain vs. Hazelcast Feature Comparison>
+* White paper, GridGain vs. Hazelcast Feature Comparison
 
 
 
@@ -117,7 +117,7 @@ An upgrade of Ehcache with support for off heap data overflow to better work wit
 * Mainly invented for the purpose of improving Coherence;
 * The emphasis on transaction might impede its performance.
 ***Reference**
-* White paper,  <CloudTran Technology Genesis>
+* White paper,  CloudTran Technology Genesis
 
 
 #### Oracle Coherence
@@ -129,7 +129,7 @@ An upgrade of Ehcache with support for off heap data overflow to better work wit
 * Licensing model.
 
 **Reference**
-* White paper, <ORACLE COHERENCE 12C>
+* White paper, ORACLE COHERENCE 12C
 
 
 #### IBM eXtreme Scale  
@@ -140,7 +140,7 @@ IBM’s counterpart of Oracle Coherence:
 
 **Reference**
 * http://whywebsphere.com/2012/07/03/data-grids-and-caching-ibm-or-oracle/
-* Redbook, < WebSphere eXtreme Scale V8.6 Key Concepts and Usage Scenarios>
+* Redbook,  WebSphere eXtreme Scale V8.6 Key Concepts and Usage Scenarios
 
 #### Memcached
 
@@ -224,7 +224,7 @@ MemCachier manages and scales clusters of memcache servers.
 
 **Reference**
 * http://www.gigaspaces.com/xap-high-availability-load-balancing/how-it-works
-* White Paper, < Elastic Caching Platforms, Q2 2010>
+* White Paper,  Elastic Caching Platforms, Q2 2010
 
 
 #### TIBCO  ActiveSpaces
@@ -243,7 +243,7 @@ MemCachier manages and scales clusters of memcache servers.
 * Less strict schema may require more validation on application data layer.
 
 **Reference**
-* White Paper, < TIBCO ActiveSpaces Use Cases>
+* White Paper,  TIBCO ActiveSpaces Use Cases
 
 
 
@@ -264,7 +264,7 @@ MemCachier manages and scales clusters of memcache servers.
 * Network bandwidth may become the bottleneck.
 
 **Reference**
-* White Paper, < Elastic Caching Platforms, Q2 2010>
+* White Paper,  Elastic Caching Platforms, Q2 2010
 * http://www.vmware.com/products/vfabric-gemfire/features.html
 
 #### Pivotal  GemFire  XD 
