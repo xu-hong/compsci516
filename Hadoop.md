@@ -12,8 +12,7 @@
 
 
 **Weakness**
-* Not an optimal choice for OLTP/operational application;
-* No trasaction.
+* Not an optimal choice for OLTP/operational application.
 
 
 **Reference**
@@ -48,7 +47,7 @@
 
 **Weakness**
 * Geared towards OLAP not OLTP;
-* No trasaction;
+* No transaction;
 * Fledgling.
 
 **Reference**
@@ -66,7 +65,7 @@
 
 **Weakness**
 * Not an optimal choice for OLTP/operational application;
-* No trasaction.
+* No transaction.
 
 **Reference**
 * Tajo documentation, http://tajo.apache.org/
@@ -118,7 +117,7 @@
 
 **Weakness**
 * Geared towards OLAP not OLTP;
-* No trasaction.
+* No transaction.
 
 
 **Reference**
@@ -136,7 +135,7 @@
 
 **Weakness**
 * Geared towards OLAP not OLTP;
-* No trasaction.
+* No transaction.
 
 
 **Reference**
@@ -239,7 +238,7 @@
 
 **Weakness**
 * Not an optimal choice for OLTP/operational application;
-* No trasaction.
+* No transaction.
 
 **Reference**
 * MetaScale, Big Data Platform, http://www.metascale.com/what-we-offer/big-data-platform.html#.VL6uBidrpTM
