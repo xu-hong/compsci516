@@ -3,7 +3,7 @@
 
 This project is an attempt to give a complete analysis to all the data platforms that exists in [the "Big Data" landscape](https://451research.com/images/Marketing/dataplatformsmapoctober2014.pdf). Each data platform will be given a list of succinct points in strengths and weaknesses. References will also be given. 
 
-Data platforms are categorized into 10 groups, which are not mutually exclusive. 
+Data platforms are categorized into 10 groups, which are not mutually exclusive:
 
 
 
