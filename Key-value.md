@@ -3,7 +3,7 @@
 ## Couchbase
 
 **Strength**
-* Flexible data model, schemaless, JSON-based document datastore or key-value store;
+* Flexible data model, schemaless, JSON-based document datastore or key-value stre;
 * Elastic scalability: auto-sharding and consistent hashing;
 * Availability through replication;
 * Persistence to disk;
