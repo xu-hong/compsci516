@@ -31,6 +31,7 @@ GenieDB is a globally distributed MySQL-as-a-Service to provide continuous avail
 ## MariaDB
 
 **Strength**
+
 A community-developed fork, drop-in replacement for the MySQL relational database management system with improvements in:
 * Variety of storage engines;
 * Disk access optimization;
@@ -46,8 +47,7 @@ A community-developed fork, drop-in replacement for the MySQL relational databas
 
 ## MariaDB Enterprise
 
-**Strength**
-* MariaDB Enterprise is a proprietary version that extends MariaDB with fully-tested binaries and technical support, backup and recovery.
+MariaDB Enterprise is a proprietary version that extends MariaDB with fully-tested binaries and technical support, backup and recovery.
 
 **Reference**
 * https://mariadb.com/products/mariadb-enterprise
@@ -68,6 +68,7 @@ A community-developed fork, drop-in replacement for the MySQL relational databas
 ## Percona
 
 **Strength**
+
 A community-developed fork, drop-in replacement for the MySQL relational database management system with improvements in:
 * Faster querying and strong consistency;
 * Easier administration;
