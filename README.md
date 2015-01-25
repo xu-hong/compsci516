@@ -1,10 +1,9 @@
 # The Anatomy of Data Platforms
 
 
-This project is an attempt to give a complete analysis to all the data platforms that exists in [the "Big Data" landscape](https://451research.com/images/Marketing/dataplatformsmapoctober2014.pdf). Each data platform will be given a list of succinct points in strengths and weaknesses. References will also be given. 
+This project is an attempt to give a complete analysis to all the data platforms that exists in [the "Big Data" landscape](https://451research.com/images/Marketing/dataplatformsmapoctober2014.pdf). Each data platform will be listed in succinct points in terms of strengths and weaknesses. References will also be given. 
 
-Data platforms are categorized into 10 groups, which are not mutually exclusive:
-
+Data platforms are categorized into 10 groups in the following, which are not mutually exclusive:
 
 
 [**Hadoop ecosystem**](https://github.com/xu-hong/compsci516/blob/master/Hadoop.md)
