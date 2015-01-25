@@ -158,7 +158,7 @@
 * Expensive!
 
 **Reference**
-Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-systems/exalytics/features.html
+* Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-systems/exalytics/features.html
 
 
 
@@ -176,7 +176,7 @@ Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-
 
 
 **Reference**
-* White Paper, <Hadoop and the Data Warehouse: When to Use Which>
+* White Paper, Hadoop and the Data Warehouse: When to Use Which
 
 ## Teradata Astor 
 
@@ -285,7 +285,7 @@ Oracle Exalytics In-Memory Machine, Features, https://www.oracle.com/engineered-
 * Suited for medium size database.
 
 **Reference**
-* White Paper, <Getting Real About Big Data: Build Versus Buy>
+* White Paper, Getting Real About Big Data: Build Versus Buy
 
 
 ## Oracle Big Data Cloud 

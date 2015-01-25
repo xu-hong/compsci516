@@ -93,7 +93,7 @@ An open source, high-performance distribution of MongoDB with improvements in:
 
 
 ## Iris Couch
-Free CouchDB hosting service
+Free CouchDB hosting service.
 
 
 
@@ -135,7 +135,7 @@ Hosting service with choices of MongoDB, Elasticsearch, RethinkDB, or Redis. Sea
 * No real transaction.
 
 **Reference**
-* Whitepaper <Technical Overview: Anatomy of the Cloudant DBaaS>
+* Whitepaper, Technical Overview: Anatomy of the Cloudant DBaaS
 
 
 

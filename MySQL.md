@@ -14,6 +14,7 @@
 
 **Weakness**
 * Strongly limited by hard disk performance;
+* Limited ability to scale;
 * Not currently compliant with the full SQL standard.
 
 **Reference**
