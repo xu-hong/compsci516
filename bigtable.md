@@ -4,6 +4,7 @@
 
 **Strength**
 * Google's Bigtable on top of Hadoop and HDFS;
+* Automatic sharding: tables are distributed via regions, and regions are automatically split and re-distributed as data grows;
 * Map/reduce with Hadoop;
 * Optimizations for real time queries;
 * Optimized for sequential write operations, and it is highly efficient for batch inserts, updates, and deletes;
